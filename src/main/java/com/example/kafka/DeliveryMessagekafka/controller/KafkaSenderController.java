@@ -24,6 +24,7 @@ public class KafkaSenderController {
                 throw new RuntimeException(e);
             }
             this.kafkaSenderService.getupdate("Sending messages....."+i);
+            System.out.println("Sending messages....."+i);
     }
         return ResponseEntity.ok("send..");
     }
